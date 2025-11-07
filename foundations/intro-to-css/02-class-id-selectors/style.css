@@ -1,1 +1,19 @@
 /* Add CSS Styling */
+.odd-elements{
+    background-color: #e89da9;
+    font-family: verdana, "DejaVu Sans", sans-serif;
+}
+
+#div2{
+    color:#0000ff;
+    font-size: 36px;
+}
+
+.md-font{
+    font-size:24px;
+}
+
+#div4{
+    background-color: #a7ffa7;
+    font-weight: bold;
+}
