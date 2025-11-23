@@ -5,6 +5,53 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display:flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.left-links,
+.right-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-links a,
+.right-links a {
+  text-decoration: none;
+  color: #4d4d4d;
+}
+
+/* .content {
+  align-self: center;
+  text-align: center;
+} */
+
+/* Better approach than using space between on body and
+then align self and text align, as the flex 1 allows the content
+to grow to fill the extra space, and gap 16 removes the need to 
+manually add spacing between the content items individually */
+.content { 
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
 }
 
 img {
@@ -16,6 +63,9 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  
+  padding: 8px;
+  /* margin-top: 16px; */
 }
 
 input {
